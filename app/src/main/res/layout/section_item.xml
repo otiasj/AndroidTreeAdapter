@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container_child_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="48dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        tools:text="1.1.1.1"
+        android:id="@+id/tv_label"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:textColor="@color/inspection_color_primary_dark"/>
+
+    <ImageView
+        android:id="@+id/iv_status_indicator"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:padding="@dimen/activity_horizontal_margin"/>
+
+    <View
+        android:id="@+id/iv_dash"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Test Group 1"
+        android:textColor="@color/inspection_color_primary_dark"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingLeft="8dp"
+        android:paddingStart="8dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_label"
+        android:layout_toEndOf="@+id/tv_label"
+        android:layout_toLeftOf="@+id/iv_status_indicator"
+        android:layout_toStartOf="@+id/iv_status_indicator"/>
+</RelativeLayout>
