@@ -5,13 +5,13 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.otiasj.adapter.R
 import com.otiasj.adapter.core.BaseViewHolder
-import com.otiasj.adapter.core.TableViewRecyclerAdapter
+import com.otiasj.adapter.core.BaseRecyclerAdapter
 
 /**
  * Created by julien on 3/6/18.
  */
 
-class MyDataRecyclerAdapter(override val context: Context) : TableViewRecyclerAdapter<BaseViewHolder>(context) {
+class MyDataRecyclerAdapter(override val context: Context) : BaseRecyclerAdapter<BaseViewHolder>(context) {
 
     override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): BaseViewHolder {
         return when (MyDataType.from(viewType)) {

@@ -7,7 +7,7 @@ import android.support.v7.widget.RecyclerView
  * Created by julien on 3/6/18.
  * A sectioned recycler adapter
  */
-abstract class TableViewRecyclerAdapter<T : BaseViewHolder>(open val context: Context) : RecyclerView.Adapter<T>(), DataChangeListener {
+abstract class BaseRecyclerAdapter<T : BaseViewHolder>(open val context: Context) : RecyclerView.Adapter<T>(), DataChangeListener {
 
     private lateinit var source: Source
 

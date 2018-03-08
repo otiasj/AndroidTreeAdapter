@@ -45,7 +45,7 @@ class SampleActivity : AppCompatActivity() {
 
         Thread({
             // val root = createStaticTree(100)
-            var root = createDynamicTree(100, 100)
+            var root = createDynamicTree(1000, 1000)
             data = TreeSource(root)
             root.load(adapter)
 
