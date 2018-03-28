@@ -20,5 +20,7 @@ abstract class Node {
     }
 
     abstract fun load(listener: DataChangeListener?)
+
+    //type -1 is reserved to the RootNode
     abstract fun getType(): Int
 }

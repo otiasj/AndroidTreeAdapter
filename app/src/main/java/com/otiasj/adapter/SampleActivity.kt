@@ -149,7 +149,7 @@ class SampleActivity : AppCompatActivity() {
                             node.index = "$childIndex"
                             node.name = "Criteria $childIndex"
                             addChild(node)
-                            node.type = MyDataType.ROW
+                            node.type = MyDataType.HEADER
                         }
                     }
 
